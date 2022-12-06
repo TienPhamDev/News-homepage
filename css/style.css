@@ -1,0 +1,178 @@
+/* 
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft orange: hsl(35, 77%, 62%)
+- Soft red: hsl(5, 85%, 63%)
+
+### Neutral
+
+Off-white: hsl(36, 100%, 99%)
+Grayish blue: hsl(233, 8%, 79%)
+Dark grayish blue: hsl(236, 13%, 42%)
+Very dark blue: hsl(240, 100%, 5%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700, 800 */
+
+/* /////////////// default ///////////////////// */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  /* Convert 1em = 10px */
+  font-size: 62.5%;
+}
+body {
+  background-color: hsl(36, 100%, 99%);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.hidden {
+  display: none;
+}
+.center {
+  margin: 0 auto;
+}
+.mobile-padding {
+  padding: 0rem 1.6rem;
+}
+/* /////////////// Grid ///////////////////// */
+.grid {
+  display: grid;
+}
+.cols--1-col {
+  grid-template-columns: 1fr;
+}
+
+/* /////////////// logo, navigation , menu button///////////////////// */
+.header {
+  padding: 2.4rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-btn {
+  border: none;
+}
+/* /////////////// section hero ///////////////////// */
+
+.div-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.img-hero {
+  width: 100%;
+}
+.lg-text-hero {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1;
+  color: hsl(240, 100%, 5%);
+}
+.text-hero {
+  color: hsl(236, 13%, 42%);
+  line-height: 1.8;
+  font-size: 1.5rem;
+  letter-spacing: 0.3px;
+}
+.btn-readmore:link,
+.btn-readmore:visited {
+  padding: 1.6rem 3rem;
+  background-color: hsl(5, 85%, 63%);
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsl(36, 100%, 99%);
+  letter-spacing: 3px;
+  align-self: flex-start;
+}
+/* div news */
+.div-new {
+  margin: 6rem 0;
+  background-color: hsl(240, 100%, 5%);
+  padding: 2rem 1.2rem;
+}
+.tittle-new {
+  color: hsl(35, 77%, 62%);
+  font-size: 2.8rem;
+}
+.new-list {
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+.new-list li {
+  padding: 2rem 0;
+}
+.new-list li:nth-child(2) {
+  border-top: 1px solid hsl(233, 8%, 79%);
+  border-bottom: 1px solid hsl(233, 8%, 79%);
+}
+.headline-new {
+  font-weight: 700;
+  font-size: 2rem;
+  color: hsl(36, 100%, 99%);
+  letter-spacing: 0.3px;
+  line-height: 1.8;
+}
+.summary-new {
+  color: hsl(233, 8%, 79%);
+  font-size: 1.5rem;
+  letter-spacing: 0.3px;
+  line-height: 1.8;
+}
+/* /////////////// section-tech-news ///////////////////// */
+.div-tech-news ul {
+  gap: 3rem;
+}
+.div-tech-news ul li {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+}
+.div-tech-news ul li img {
+  width: 10rem;
+}
+.tech-news-number {
+  color: hsl(233, 8%, 79%);
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+.tech-news-headline {
+  font-size: 2rem;
+  color: hsl(240, 100%, 5%);
+}
+.tech-news-summary {
+  color: hsl(236, 13%, 42%);
+  font-size: 1.5rem;
+  letter-spacing: 0.3px;
+  line-height: 1.8;
+}
