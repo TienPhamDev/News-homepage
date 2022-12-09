@@ -318,7 +318,7 @@ ul {
     font-size: 1.8rem;
   }
   /* section-tech-news */
-  .grid-cols {
+  .grid--cols {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
