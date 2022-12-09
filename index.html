@@ -37,7 +37,7 @@
     <header class="header">
       <img src="/assets/images/logo.svg" alt="logo" class="logo" />
       <nav class="nav hidden">
-        <ul>
+        <ul class="nav-ul">
           <li><a href="" class="links">Home</a></li>
           <li><a href="" class="links">New</a></li>
           <li><a href="" class="links">Popular</a></li>
@@ -45,11 +45,12 @@
           <li><a href="" class="links">Categories</a></li>
         </ul>
       </nav>
-      <button class="menu-btn">
+      <div class="dark-sceen hidden"></div>
+      <button class="menu-btn menu-btn-open">
         <img src="/assets/images/icon-menu.svg" alt="menu button open" />
       </button>
-      <button class="menu-btn hidden">
-        <img src="/assets/images/icon-menu-close.svg" alt="menu" />
+      <button class="menu-btn menu-btn-close hidden">
+        <img src="/assets/images/icon-menu-close.svg" alt="menu button close" />
       </button>
     </header>
     <main>
@@ -105,7 +106,7 @@
       </section>
       <section class="section-tech-news mobile-padding">
         <div class="div-tech-news">
-          <ul class="grid cols--1-col">
+          <ul class="grid grid--cols">
             <li>
               <img src="/assets/images/image-retro-pcs.jpg" alt="retro PC" />
               <div class="text-new-box">
@@ -162,5 +163,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Tien Pham</a>.
     </div>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>

@@ -68,7 +68,7 @@ ul {
 .grid {
   display: grid;
 }
-.cols--1-col {
+.grid-cols {
   grid-template-columns: 1fr;
 }
 
@@ -78,9 +78,50 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
+
+.nav {
+  position: absolute;
+  background-color: hsl(36, 100%, 99%);
+  right: 0;
+  height: 100vh;
+  width: 70%;
+  top: 0;
+  padding: 3rem;
+  z-index: 2;
+}
+.nav-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  position: absolute;
+  top: 15%;
+}
+.dark-sceen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: hsl(240, 100%, 5%);
+  height: 100vh;
+  opacity: 40%;
+}
+.links:link,
+.links:visited {
+  color: hsl(240, 100%, 5%);
+  font-size: 3rem;
+}
+/* /////////////// Menu button////////////////// */
 .menu-btn {
   border: none;
+  z-index: 9999;
+  background-color: hsl(36, 100%, 99%);
+}
+
+.hidden {
+  display: none;
 }
 /* /////////////// section hero ///////////////////// */
 
@@ -204,6 +245,27 @@ ul {
     margin: 0 auto;
   }
   .header {
+    position: static;
+  }
+  .nav {
+    position: static;
+    background-color: none;
+    height: auto;
+    padding: 0;
+    width: auto;
+    z-index: 2;
+  }
+  .nav-ul {
+    display: flex;
+    flex-direction: row;
+    position: static;
+  }
+  .links:link,
+  .links:visited {
+    color: hsl(236, 13%, 42%);
+    font-size: 1.8rem;
+  }
+  .header {
     padding: 6rem 0 4rem 0;
   }
   .mobile-padding {
@@ -256,7 +318,7 @@ ul {
     font-size: 1.8rem;
   }
   /* section-tech-news */
-  .cols--1-col {
+  .grid-cols {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
