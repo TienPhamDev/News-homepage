@@ -4,7 +4,7 @@ const darkscreenEl = document.querySelector(".dark-sceen");
 const menuBtnOpenEl = document.querySelector(".menu-btn-open");
 const menuBtnCloseEl = document.querySelector(".menu-btn-close");
 const menuBtnEl = document.querySelectorAll(".menu-btn");
-let mediaScreen1440 = window.matchMedia("(min-width:1440px)");
+let mediaScreen1440 = window.matchMedia("(min-width:791px)");
 
 for (let i = 0; i < menuBtnEl.length; i++) {
   menuBtnEl[i].addEventListener("click", function () {
